@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: grading-service
-          image: vucongtuanduong/grading-executor:IMAGE_TAG_REPLACEMENT
+          image: DOCKERHUB_USERNAME/executor-service:IMAGE_TAG_REPLACEMENT
           ports:
             - containerPort: 8083
           env:
