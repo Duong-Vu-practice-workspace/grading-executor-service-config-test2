@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: grading-service
-          image: vucongtuanduong/grading-executor:v1.0.2
+          image: vucongtuanduong/grading-executor:v1.0.4
           ports:
             - containerPort: 8083
           env:
