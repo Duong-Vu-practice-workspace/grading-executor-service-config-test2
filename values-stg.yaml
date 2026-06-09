@@ -1,0 +1,27 @@
+name: executor-service
+
+replicaCount: 1
+
+image:
+  repository: vucongtuanduong/grading-executor
+  tag: "latest"
+  pullPolicy: Always
+
+global:
+  domain: vucongtuanduong.dpdns.org
+  prefix: dev2
+
+spring:
+  profilesActive: stg
+
+service:
+  type: ClusterIP
+  port: 8083
+
+resources:
+  requests:
+    cpu: 500m
+    memory: 512Mi
+  limits:
+    cpu: 1
+    memory: 1Gi
